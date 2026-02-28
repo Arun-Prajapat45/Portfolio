@@ -75,8 +75,8 @@ export default function HeroCard() {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/GovindBhatter.pdf";
-    link.download = "arun-prajapat-resume.pdf";
+    link.href = "/resume.pdf";
+    link.download = "ArunPrajapat_resume.pdf";
     link.click();
   };
 
