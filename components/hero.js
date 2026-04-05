@@ -15,7 +15,8 @@ export default function HeroCard() {
   const texts = [
     " Full Stack Developer",
     " Data Analyst",
-    " AI-ML Enthusiast"
+    " AI-ML Enthusiast",
+    " Agentic AI Developer"
   ];
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -86,19 +87,19 @@ export default function HeroCard() {
   };
 
   const marqueeItems = [
+    "GATE 2026 QUALIFIED",
+    "●",
     "FULL STACK DEVELOPER",
     "●",
     "AI-ML ENTHUSIAST",
     "●",
     "Generative AI Enthusiast",
     "●",
-    "MERN STACK",
-    "●",
     "DATA ANALYST",
     "●",
     "CODECHEF 2★",
     "●",
-    "LEETCODE 1540",
+    "LEETCODE 1580",
     "●",
   ];
 

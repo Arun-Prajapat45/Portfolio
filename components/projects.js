@@ -15,10 +15,19 @@ const projects = [
     codeLink: "https://github.com/Springboard-Internship-2025/ML-Driven-Web-Platform-for-Cryptocurrency-Price-Forecasting_November_Batch-5_2025/tree/Arun/WebApplication"
   },
   {
+    title: "AI Research Assistant",
+    description: " AI Research Assistant chatbot with long term memory that processes research papers and dynamically handle search, summarization, and citation generation..",
+    tags: ["Python", "Streamlit", "LangChain", "LangGraph", "LangSmith", "GROQ API", "RAG"],
+    category: "AI",
+    status: "Live",
+    liveLink: "https://github.com/Arun-Prajapat45/AI-Research-Assistant",
+    codeLink: "https://github.com/Arun-Prajapat45/AI-Research-Assistant"
+  },
+  {
     title: "Postal Automation",
     description: "An end-to-end automation pipeline (Image Acquisition → Preprocessing → DAB Detection → OCR → Entity Validation → Auto-Correction) to extract destination address from postcard images.",
     tags: ["Python", "OpenCV", "Scikit-learn", "Streamlit", "FastAPI", "MongoDB"],
-    category: "Web",
+    category: "ML",
     status: "Live",
     liveLink: "https://github.com/Arun-Prajapat45/Postal_Automation-",
     codeLink: "https://github.com/Arun-Prajapat45/Postal_Automation-"
@@ -43,7 +52,7 @@ const projects = [
   }
 ];
 
-const categories = ["All", "Web", "ML"];
+const categories = ["All", "Web", "ML", "AI"];
 
 export default function ProjectsPage() {
   const [activeCategory, setActiveCategory] = useState("All");
