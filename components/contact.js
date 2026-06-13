@@ -81,10 +81,10 @@ export default function ContactPage() {
       <div className="w-full max-w-7xl mx-auto">
         {/* Hero Header */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-none mb-2">
+          <h2 className="text-5xl md:text-5xl lg:text-6xl font-black text-white leading-none mb-2">
             Open
           </h2>
-          <h2 className="text-5xl md:text-7xl lg:text-8xl font-black leading-none mb-8" style={{ WebkitTextStroke: "2px rgba(0, 212, 255, 0.5)", color: "transparent" }}>
+          <h2 className="text-5xl md:text-5xl lg:text-6xl font-black leading-none mb-8" style={{ WebkitTextStroke: "2px rgba(0, 212, 255, 0.5)", color: "transparent" }}>
             Frequency
           </h2>
           <p className="text-white/30 text-sm md:text-base max-w-lg mx-auto mono">

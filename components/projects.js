@@ -6,6 +6,15 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const projects = [
   {
+    title: "Adoreprints",
+    description: "An end-to-end E-Commerce Web application for printing needs, providing a seamless experience from design to delivery.",
+    tags: ["Next.js", "MySQL", "React-Konva", "TailwindCSS"],
+    category: "Web",
+    status: "Live",
+    liveLink: "https://adorprints.in/",
+    codeLink: "https://github.com/Arun-Prajapat45/OMGS"
+  },
+  {
     title: "CryptoPulse",
     description: "A real-time full-stack web application for cryptocurrency price analysis and forecasting. Achieved 91-99% accuracy using LSTM and Gradient Boosting Algorithms.",
     tags: ["React", "Python", "FastAPI", "MongoDB", "Binance api", "GoogleAuth"],
@@ -62,15 +71,15 @@ export default function ProjectsPage() {
     : projects.filter(p => p.category === activeCategory);
 
   return (
-    <div className="py-20 md:py-32 px-4 md:px-8">
+    <div className="py-10 md:py-2 px-4 md:px-8">
       <div className="w-full max-w-7xl mx-auto">
         {/* Header */}
-        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-16 gap-8">
+        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-8 gap-8">
           <div>
-            <h2 className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-none mb-2">
+            <h2 className="text-5xl md:text-5xl lg:text-6xl font-black text-white leading-none mb-2">
               Featured
             </h2>
-            <h2 className="text-5xl md:text-7xl lg:text-8xl font-black leading-none" style={{ WebkitTextStroke: "2px rgba(0, 212, 255, 0.5)", color: "transparent" }}>
+            <h2 className="text-5xl md:text-5xl lg:text-6xl font-black leading-none" style={{ WebkitTextStroke: "2px rgba(0, 212, 255, 0.5)", color: "transparent" }}>
               Work
             </h2>
           </div>

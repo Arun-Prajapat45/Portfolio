@@ -4,53 +4,92 @@
 import { motion } from 'framer-motion';
 import {
   SiJavascript, SiReact, SiNextdotjs, SiNodedotjs,
-  SiExpress, SiPython, SiGit, SiTailwindcss,
-  SiFigma, SiTensorflow, SiKeras, SiScikitlearn, SiMongodb
+  SiExpress, SiPython, SiTailwindcss, SiTensorflow, SiMongodb,
+  SiC, SiCplusplus, SiFastapi, SiMysql, SiOpencv,
+  SiPostman, SiVercel, SiRailway, SiGithub
 } from 'react-icons/si';
-import { FaServer, FaMobileAlt, FaDatabase, FaCodeBranch } from 'react-icons/fa';
+import {
+  FaServer, FaDatabase, FaCode, FaLaptopCode, FaBrain,
+  FaLanguage, FaRobot, FaLink, FaProjectDiagram, FaSearch, FaTools
+} from 'react-icons/fa';
+import { TbApi } from 'react-icons/tb';
+import { BsStars } from 'react-icons/bs';
 
 const skillsData = [
   {
-    category: "Frontend",
-    icon: <FaMobileAlt className="text-lg text-[#00d4ff]" />,
+    category: "Programming Language",
+    icon: <FaCode className="text-lg text-[#00d4ff]" />,
     technologies: [
-      { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" />, proficiency: "Intermediate" },
-      { name: "React", icon: <SiReact className="text-cyan-400" />, proficiency: "Expert" },
-      { name: "Next.js", icon: <SiNextdotjs className="text-white" />, proficiency: "Advanced" },
-      { name: "Tailwind CSS", icon: <SiTailwindcss className="text-cyan-300" />, proficiency: "Expert" },
+      { name: "C", icon: <SiC className="text-blue-500" />, proficiency: "Intermediate" },
+      { name: "C++", icon: <SiCplusplus className="text-blue-600" />, proficiency: "Intermediate" },
+      { name: "Python", icon: <SiPython className="text-yellow-500" />, proficiency: "Intermediate" },
+      { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" />, proficiency: "Intermediate" }
     ]
   },
   {
-    category: "Backend",
+    category: "Frontend",
+    icon: <FaLaptopCode className="text-lg text-[#00d4ff]" />,
+    technologies: [
+      { name: "React.js", icon: <SiReact className="text-cyan-400" />, proficiency: "Advanced" },
+      { name: "Next.js", icon: <SiNextdotjs className="text-white" />, proficiency: "Intermediate" },
+      { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" />, proficiency: "Intermediate" },
+      { name: "Tailwind CSS", icon: <SiTailwindcss className="text-cyan-300" />, proficiency: "Intermediate" }
+    ]
+  },
+
+  {
+    category: "Backend & APIs",
     icon: <FaServer className="text-lg text-[#00d4ff]" />,
     technologies: [
       { name: "Node.js", icon: <SiNodedotjs className="text-green-500" />, proficiency: "Advanced" },
-      { name: "Express", icon: <SiExpress className="text-gray-300" />, proficiency: "Intermediate" },
-      { name: "Python", icon: <SiPython className="text-blue-400" />, proficiency: "Advanced" },
-      { name: "MongoDB", icon: <SiMongodb className="text-green-500" />, proficiency: "Advanced" }
+      { name: "Express.js", icon: <SiExpress className="text-gray-300" />, proficiency: "Advanced" },
+      { name: "FastAPI", icon: <SiFastapi className="text-teal-400" />, proficiency: "Intermediate" },
+      { name: "REST APIs", icon: <TbApi className="text-blue-400" />, proficiency: "Advanced" }
     ]
   },
+
   {
-    category: "Machine Learning",
+    category: "Databases",
     icon: <FaDatabase className="text-lg text-[#00d4ff]" />,
     technologies: [
-      { name: "TensorFlow", icon: <SiTensorflow className="text-orange-400" />, proficiency: "Basic" },
-      { name: "Keras", icon: <SiKeras className="text-red-400" />, proficiency: "Basic" },
-      { name: "scikit-learn", icon: <SiScikitlearn className="text-blue-400" />, proficiency: "Basic" },
-      { name: "Pandas", icon: <SiPython className="text-blue-500" />, proficiency: "Advanced" },
-      { name: "NumPy", icon: <SiPython className="text-green-400" />, proficiency: "Advanced" }
+      { name: "MongoDB", icon: <SiMongodb className="text-green-500" />, proficiency: "Advanced" },
+      { name: "MySQL", icon: <SiMysql className="text-blue-400" />, proficiency: "Advanced" }
     ]
   },
+
   {
-    category: "Tools & Other",
-    icon: <FaCodeBranch className="text-lg text-[#00d4ff]" />,
+    category: "AI & Machine Learning",
+    icon: <FaBrain className="text-lg text-[#00d4ff]" />,
     technologies: [
-      { name: "Git", icon: <SiGit className="text-orange-500" />, proficiency: "Expert" },
-      { name: "Figma", icon: <SiFigma className="text-purple-400" />, proficiency: "Intermediate" }
+      { name: "Machine Learning", icon: <FaBrain className="text-orange-400" />, proficiency: "Advanced" },
+      { name: "Deep Learning", icon: <SiTensorflow className="text-orange-500" />, proficiency: "Intermediate" },
+      { name: "Computer Vision", icon: <SiOpencv className="text-red-500" />, proficiency: "Advanced" },
+      { name: "NLP", icon: <FaLanguage className="text-cyan-400" />, proficiency: "Advanced" }
+    ]
+  },
+
+  {
+    category: "GenAI & LLMs",
+    icon: <BsStars className="text-lg text-[#00d4ff]" />,
+    technologies: [
+      { name: "LangChain", icon: <FaLink className="text-purple-400" />, proficiency: "Advanced" },
+      { name: "LangGraph", icon: <FaProjectDiagram className="text-pink-400" />, proficiency: "Advanced" },
+      { name: "RAG", icon: <FaSearch className="text-green-400" />, proficiency: "Advanced" },
+      { name: "Agentic AI", icon: <FaRobot className="text-yellow-400" />, proficiency: "Intermediate" }
+    ]
+  },
+
+  {
+    category: "Tools & Deployment",
+    icon: <FaTools className="text-lg text-[#00d4ff]" />,
+    technologies: [
+      { name: "GitHub", icon: <SiGithub className="text-white" />, proficiency: "Expert" },
+      { name: "Postman", icon: <SiPostman className="text-orange-500" />, proficiency: "Advanced" },
+      { name: "Vercel", icon: <SiVercel className="text-white" />, proficiency: "Advanced" },
+      { name: "Railway", icon: <SiRailway className="text-white" />, proficiency: "Advanced" }
     ]
   }
 ];
-
 const proficiencyLevels = {
   "Basic": "40%",
   "Intermediate": "70%",
@@ -67,7 +106,7 @@ const proficiencyColors = {
 
 export default function SkillsPage() {
   return (
-    <div className="py-20 md:py-32 px-4 md:px-8">
+    <div className="py-10 md:py-10 px-4 md:px-8 mb-20">
       <div className="w-full max-w-7xl mx-auto">
         {/* Header */}
         <div className="section-heading">

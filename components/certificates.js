@@ -5,6 +5,14 @@ import { ExternalLink, Award, ShieldCheck } from 'lucide-react';
 
 const certificates = [
   {
+    title: "AI/ML Internship Certificate | Infosys Springboard",
+    description: "This program is designed to provide a strong foundation in AI and Machine Learning concepts. It covers topics such as data preprocessing, model training, evaluation, and deployment. The program also includes hands-on projects to help learners apply their knowledge to real-world problems.",
+    tags: ["Data Preprocessing", "Model Training", "Model Evaluation", "Model Deployment"],
+    viewLink: "https://drive.google.com/file/d/1ch_1bThxcq0pNtB_ciVDuyWxcXkbo1d6/view?usp=drive_link",
+    issuer: "Infosys Springboard",
+    status: "Verified"
+  },
+  {
     title: "Infosys Springboard Data Science",
     description: "An intensive program focused on machine learning foundations, optimization, and large-scale model applications.",
     tags: ["Deep Learning", "Neural Networks", "Computer Vision", "NLP"],

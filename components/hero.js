@@ -76,8 +76,8 @@ export default function HeroCard() {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/resume.pdf";
-    link.download = "ArunPrajapat_resume.pdf";
+    link.href = "/Arun_Prajapat_resume.pdf";
+    link.download = "Arun_Prajapat_Resume.pdf";
     link.click();
   };
 
@@ -99,7 +99,7 @@ export default function HeroCard() {
     "●",
     "CODECHEF 2★",
     "●",
-    "LEETCODE 1580",
+    "LEETCODE 1681",
     "●",
   ];
 

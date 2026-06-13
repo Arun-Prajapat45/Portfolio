@@ -3,26 +3,45 @@
 
 import { motion } from 'framer-motion';
 
+
 const experiences = [
   {
-    type: "education",
-    title: "Computer Science Engineering",
-    institution: "Indian Institute of Information Technology Vadodara - International Campus Diu",
-    period: "2023 - Present",
-    description: "Pursuing B.Tech in Computer Science with focus on AI/ML, Data Structures, Algorithms, and Full Stack Web Development."
+    type: "research",
+    title: "Research Intern",
+    institution: "Indian Institute of Information Technology Vadodara",
+    period: "JUN 2026 - PRESENT",
+    description:
+      "Conducting research in Artificial Intelligence and Machine Learning, focusing on applied research, experimentation, and model development."
   },
   {
     type: "internship",
-    title: "AI-ML Engineer Intern",
+    title: "Software Developer Intern",
+    institution: "Ideal Web Infotech",
+    period: "MAY 2026 - PRESENT",
+    description:
+      "Working on full-stack web development projects, developing scalable web applications, APIs, and modern user-centric digital solutions."
+  },
+  {
+    type: "teaching",
+    title: "Teaching Assistant – Experimental Physics",
+    institution: "Indian Institute of Information Technology Vadodara",
+    period: "JAN 2026 - APR 2026",
+    description:
+      "Assisted faculty in conducting laboratory sessions, mentoring students, evaluating assignments, and supporting practical experiments in Experimental Physics."
+  },
+  {
+    type: "internship",
+    title: "AI/ML Engineer Intern",
     institution: "Infosys Springboard",
     period: "NOV 2025 - JAN 2026",
-    description: "Worked on ML driven Cryptocurrency Price Forecasting and Analysis. Build A real time Full-Stack Web Application for the same."
+    description:
+      "Developed CryptoPulse, a real-time cryptocurrency forecasting platform using Machine Learning and Full-Stack technologies for market analysis and prediction."
   }
 ];
 
 export default function ExperiencesPage() {
   return (
-    <div className="py-20 md:py-32 px-4 md:px-8">
+    <div className="py-10 md:py-2 px-4 md:px-8">
       <div className="w-full max-w-7xl mx-auto">
         {/* Header */}
         <div className="section-heading">
